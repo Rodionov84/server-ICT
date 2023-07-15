@@ -94,6 +94,7 @@ function transformExcelToJSON(excelFrom1C, map) {
   return readXlsxFile(excelFrom1C, { map })
     .then(({ rows }) => {
       console.log("Time transformExcelToJSON() starts...");
+      console.log("excelFrom1C[0]:", excelFrom1C[0]);
       return rows
     })
     .catch(() => {
