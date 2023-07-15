@@ -93,7 +93,7 @@ app.listen(port, () => {
 function transformExcelToJSON(excelFrom1C, map) {
   return readXlsxFile(excelFrom1C, { map })
     .then(({ rows }) => {
-      console.log("Time starts");
+      console.log("Time transformExcelToJSON() starts...");
       return rows
     })
     .catch(() => {
